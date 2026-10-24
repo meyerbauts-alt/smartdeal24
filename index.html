@@ -1,1 +1,200 @@
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SmartDeal24 – Entdecke Technik, praktische Produkte und clevere Kaufempfehlungen.">
+  <title>SmartDeal24 – Gute Produkte. Smarte Deals.</title>
+  <style>
+    :root {
+      --navy: #071b33;
+      --blue: #103452;
+      --turquoise: #19c8d8;
+      --white: #ffffff;
+      --muted: #526579;
+      --light: #f2f8fb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    .logo span { color: var(--turquoise); }
+
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: white;
+      padding: 65px 7%;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      color: var(--turquoise);
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.15; }
+
+    .hero p {
+      max-width: 580px;
+      margin: 18px auto 26px;
+      color: #d8e8f3;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--turquoise);
+      color: var(--navy);
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section { padding: 45px 6%; }
+
+    .section-title { text-align: center; margin-bottom: 28px; }
+
+    .section-title p { color: var(--muted); }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: 15px;
+    }
+
+    .category {
+      background: var(--light);
+      border: 1px solid #e0edf3;
+      border-radius: 12px;
+      padding: 23px 12px;
+      text-align: center;
+    }
+
+    .category .emoji { font-size: 34px; }
+    .category h3 { font-size: 16px; margin-bottom: 4px; }
+    .category p { color: var(--muted); font-size: 13px; margin: 0; }
+
+    .info {
+      background: var(--light);
+      text-align: center;
+    }
+
+    .info p { max-width: 650px; margin: auto; }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 25px 6%;
+      font-size: 13px;
+    }
+
+    footer a { color: var(--turquoise); margin: 0 8px; }
+
+    @media (max-width: 500px) {
+      header { justify-content: center; }
+      nav { justify-content: center; }
+      .hero { padding: 45px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Smart<span>Deal</span>24</div>
+    <nav>
+      <a href="#start">Start</a>
+      <a href="#kategorien">Kategorien</a>
+      <a href="#tipps">Kauftipps</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="eyebrow">CLEVER KAUFEN. BESSER ENTSCHEIDEN.</div>
+      <h1>Gute Produkte.<br>Smarte Deals.</h1>
+      <p>Entdecke praktische Produkte, hilfreiche Tipps und Inspiration für deinen Alltag. Wir helfen dir, Angebote besser einzuordnen und passende Produkte zu finden.</p>
+      <a class="button" href="#kategorien">Produkte entdecken ↓</a>
+    </section>
+
+    <section id="kategorien">
+      <div class="section-title">
+        <h2>Entdecke unsere Kategorien</h2>
+        <p>Praktische Ideen und Produkttipps auf einen Blick.</p>
+      </div>
+      <div class="categories">
+        <article class="category">
+          <div class="emoji">🎧</div>
+          <h3>Technik & Elektronik</h3>
+          <p>Technik für jeden Tag</p>
+        </article>
+        <article class="category">
+          <div class="emoji">🛠️</div>
+          <h3>Werkzeug</h3>
+          <p>Helfer für deine Projekte</p>
+        </article>
+        <article class="category">
+          <div class="emoji">🏠</div>
+          <h3>Haus & Haushalt</h3>
+          <p>Praktisch wohnen</p>
+        </article>
+        <article class="category">
+          <div class="emoji">🎮</div>
+          <h3>Gaming & Computer</h3>
+          <p>Zubehör und Technik</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="info" id="tipps">
+      <div class="section-title">
+        <h2>Unsere Kauftipps</h2>
+        <p>Gut informiert statt einfach irgendetwas kaufen.</p>
+      </div>
+      <p>Hier veröffentlichen wir künftig Produktvorstellungen, verständliche Vergleiche und hilfreiche Kaufberatungen. Wir achten darauf, Vorteile und mögliche Nachteile transparent darzustellen.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>SmartDeal24</strong>
+    <p>Gute Produkte. Smarte Deals.</p>
+    <p>Manche Links können künftig Affiliate-Links sein. Wenn du darüber einkaufst, können wir eine Provision erhalten. Für dich entstehen dadurch normalerweise keine Mehrkosten.</p>
+    <p>Impressum · Datenschutz · Kontakt</p>
+    <p>© 2026 SmartDeal24</p>
+  </footer>
+</body>
+</html>
+
